@@ -1,0 +1,64 @@
+<button class = "btn bttn" (click)="back()">Back to admin page</button>
+<!-- <br>
+<select name="topic" [(ngModel)]= "selectedtopic">
+    <option *ngFor = "let t of topics" [value]="t.tname">{{t.tname}}</option>    
+</select>
+
+<br>
+<select name="city" [(ngModel)]= "selectedcity">
+    <option *ngFor = "let c of cities" [value]="c">{{c}}</option>    
+</select> -->
+
+<table border="1">
+    <tr>
+        <td>Topic</td>
+        <td><select name="topic" [(ngModel)]= "selectedtopic">
+            <option *ngFor = "let t of topics" [value]="t.tname">{{t.tname}}</option>    
+        </select></td>
+    </tr>
+    <tr>
+        <td>City</td>
+        <td><select name="city" [(ngModel)]= "selectedcity">
+            <option *ngFor = "let c of cities" [value]="c">{{c}}</option>    
+        </select></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button class="btn bsst btn-success" (click) = "searchstudent()" >Search</button>
+        </td>
+
+    </tr>
+</table>
+
+<!-- <br>
+<br>
+Selected Topic = {{selectedtopic}}
+<br>
+Selected City = {{selectedcity}}
+<br>
+<br> -->
+
+
+
+<hr>
+<table border="1">
+    <th>Full Name</th>
+    <th>Email</th>
+    <th>Mobile number</th>
+    <th>City</th>
+    <th>College</th>
+    <th>User Id</th>
+    <th>Marks</th>
+    <tr *ngFor = "let u of users">
+        
+        <td>{{u[0]}}</td>
+        <td>{{u[1]}}</td>
+        <td>{{u[2]}}</td>
+        <td>{{u[3]}}</td>
+        <td>{{u[4]}}</td>
+        <td>{{u[5]}}</td>
+        <td>{{u[6]}}</td>
+
+    </tr>
+</table>

@@ -1,0 +1,116 @@
+
+
+<div class ="bootstrap-wrapper">
+
+    <div class ="container">
+
+<div class="row">
+<div class="col-md-6 offset-md-3">
+
+<!--Global text center with style.css-->
+
+<mat-card class="text-center">
+<form #userForm="ngForm" (ngSubmit)="saveUser(userForm)">
+  <h2 class="text-center">Student Registration</h2>
+   
+    <!-- uSERNme -->
+    <mat-form-field class="full-width" appearance="outline">
+ 
+    <mat-label>Username </mat-label>
+    <input matInput placeholder="Enter here" name="userid" ngModel required> 
+    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+    <!-- <mat-hint>Enter here</mat-hint>  -->
+  </mat-form-field>
+
+<!-- EMAIL -->
+  <mat-form-field  class="full-width" appearance="outline">
+    
+    <mat-label>Email </mat-label>
+    <input matInput placeholder="Enter here" name="email" ngModel required> 
+
+  </mat-form-field>
+
+  <!-- PASS -->
+  <mat-form-field class="full-width" appearance="outline">
+    
+    <mat-label>Password </mat-label>
+    <input matInput placeholder="Enter here" name="password" ngModel required> 
+   
+  </mat-form-field>
+
+  <!-- CITY -->
+  <mat-form-field class="full-width" appearance="outline">
+    
+    <mat-label>City </mat-label>
+    <input matInput placeholder="Enter here" name="city" ngModel required> 
+   
+  </mat-form-field>
+
+<!-- MOB NO -->
+  <mat-form-field class="full-width" appearance="outline">
+    
+    <mat-label>Mobile Number </mat-label>
+    <input matInput placeholder="Enter here" name="mobile_number" ngModel required> 
+    
+  </mat-form-field>
+
+<!-- COLLEGE -->
+  <!-- FULLNAME -->
+  <mat-form-field class="full-width" appearance="outline">
+    
+    <mat-label>College Name </mat-label>
+    <input matInput placeholder="Enter here" name="college"  ngModel required> 
+    
+  </mat-form-field>
+
+<!-- FULLNAME -->
+  <mat-form-field class="full-width" appearance="outline">
+    
+    <mat-label>Full Name </mat-label>
+    <input matInput placeholder="Enter here" name="fullname"  ngModel required> 
+    
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="reset" value="Reset" class="text-center">Reset</button>
+  <button mat-raised-button color="warn" style="margin-left: 20px" type="submit" value="Register" [disabled]="!userForm.valid">Submit</button>
+    <!-- <td><input type="reset" class="btn btn-primary" value="Reset"></td>
+    <td><input type="submit" class="btn btn-success" value="Register" [disabled]="!userForm.valid"></td> -->
+
+
+</form>
+</mat-card>
+</div></div>
+</div></div>
+
+
+
+<!-- <h2>Student Registration</h2>
+<form #userForm="ngForm" (ngSubmit)="saveUser(userForm)">
+    <table>
+            <tr>
+                <td>User id </td><td><input type="text" name="userid" ngModel required></td>
+            </tr>
+            <tr>
+                <td>Email id </td><td>
+            <input type="text"  email name="email" ngModel required ></td>
+            </tr>
+            <tr>
+                <td>Password  </td><td><input type="password" name="password" ngModel></td>
+            </tr>    
+            <tr>
+                <td>City </td><td><input type="text" name="city" ngModel></td>
+            </tr>   
+            <tr>
+                <td>Mobile Number </td><td><input type="number" name="mobile_number" pattern = "[0-9]{10}" ngModel required></td>
+            </tr>   
+            <tr>
+                <td>College</td><td><input type="text" name="college" ngModel></td>
+            </tr>   
+            <tr>
+                <td>Full Name </td><td><input type="text" name="fullname" ngModel></td>
+            </tr>  
+            <tr class = "buttons">
+                <td><input type="reset" class="btn btn-primary" value="Reset"></td>
+                <td><input type="submit" class="btn btn-success" value="Register" [disabled]="!userForm.valid"></td>
+            </tr>
+    </table>
+</form> -->

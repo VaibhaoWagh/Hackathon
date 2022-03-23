@@ -1,0 +1,16 @@
+<h4>Select your exam here!</h4>
+<table border="1">
+    <thead>
+        <th>Topic Id</th>
+        <th>Topic Name</th>
+        <th>Topic Level</th>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let t of topics">
+            <td>{{t.tid}}</td>
+            <td>{{t.tname}}</td>
+            <td>{{t.tlevel}}</td>
+            <td><button class="btn" (click) = "selBtnClicked(t.tid)">Select</button></td>
+        </tr>
+    </tbody>
+</table>

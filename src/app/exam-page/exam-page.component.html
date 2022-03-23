@@ -1,0 +1,40 @@
+<button class="btn logout" (click) = "logout()">Logout</button>
+<table>
+   
+    <tr>
+        <br>
+        <h4> Q)  {{q.qname}}  </h4>
+
+            <div class="divv">
+                <input type="radio" id="r1" name="r" value="{{q.option1}}" [(ngModel)] = "selected_option" >
+                <label for="r1">{{q.option1}}</label>
+                
+            </div >
+            <div class = "divv">
+                <input type="radio" id="r2" name="r" value="{{q.option2}}" [(ngModel)] = "selected_option">
+                <label for="r2"> {{q.option2}} </label>
+                </div>
+
+            <div class = "divv">
+                <input type="radio" id="r3" name="r" value="{{q.option3}}" [(ngModel)] = "selected_option">
+                <label for="r3"> {{q.option3}} </label>
+            </div>
+            
+            <div class = "divv">
+                <input type="radio" id="r4" name="r" value="{{q.option4}}" [(ngModel)] = "selected_option">
+                <label for="r4"> {{q.option4}} </label>
+            </div>
+    </tr>
+    <hr>
+    <tr>
+        <td>Selected Option: 
+            {{selected_option}}
+        </td>
+        <td>
+            <button class="btn btn-info" (click) = "nextQuestion()" [disabled]="b" >Next</button>
+        </td>
+        <td>
+            <button class ="btn btn-success"   [disabled]="!b" (click) = "submitButton()" >Submit</button>
+        </td>
+    </tr>
+</table>

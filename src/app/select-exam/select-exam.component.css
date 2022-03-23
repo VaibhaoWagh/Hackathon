@@ -1,0 +1,12 @@
+h4{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+table{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 1rem 0.5em;
+}

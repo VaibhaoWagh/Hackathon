@@ -1,0 +1,39 @@
+<button class = "btn bttn" (click)="back()">Back to admin page</button>
+<h4>Add Question</h4>
+<form #userForm="ngForm" (ngSubmit)="saveQuestion(userForm)">
+    <table border="1">
+  
+            <tr>
+                <td>Question id</td><td><input type="text" name="qid" ngModel required></td>
+            </tr>
+            <tr>
+                <td>Question</td><td>
+            <input type="text"  question name="qname" ngModel required ></td>
+            </tr>
+            <tr>
+                <td>Option 1</td><td><input type="text" name="option1" ngModel></td>
+            </tr>    
+            <tr>
+                <td>Option 2</td><td><input type="text" name="option2" ngModel></td>
+            </tr>   
+            <tr>
+                <td> Option 3</td><td><input type="text" name="option3" ngModel></td>
+            </tr>   
+            <tr>
+                <td>Option 4</td><td><input type="text" name="option4" ngModel></td>
+            </tr>   
+            <tr>
+                <td> Correct Answer</td><td><input type="text" name="correct_Ans" ngModel></td>
+            </tr>  
+            <tr>
+              <td> Topic id</td><td><input type="text" name="tid" ngModel></td>
+          </tr> 
+  
+            <tr><td><input type="reset" value="Reset"></td>
+                <td><input type="submit" value="Save" [disabled]="!userForm.valid"></td></tr>
+    </table>
+  </form>
+  
+  
+  
+  

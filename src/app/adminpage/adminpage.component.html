@@ -1,0 +1,77 @@
+
+<div class="bootstrap-wrapper">
+    <div class="container-fluid"></div>
+<div class="row">
+   <div class="col-md-2">
+    <mat-card>
+            <mat-action-list>
+            
+            <div mat-subheader> <b>Menu</b>
+                </div>
+            
+            <button mat-list-item class="btn" (click)="addcsvQuestion()">Add Questions</button>
+            <button mat-list-item class="btn" (click)="addsinglequestion()">Add Question</button>
+            <button mat-list-item class="btn" (click)="removesinglequestion()">Remove Question</button>
+            <button mat-list-item class="btn" (click)="searchstudents()">Search Students</button>
+
+        
+        </mat-action-list>
+        </mat-card>   
+</div>
+
+<div class="col-md-8"><mat-card>
+    <div class="container text-center">
+<h3><h4>Admin Home</h4></h3>
+<img 
+src="https://cdn-icons-png.flaticon.com/512/149/149071.png" 
+alt=""
+class="profile-image"
+><!-- admin component.css size set-->
+<h3 class="col-md-10 offset-md-1">ADMIN</h3>
+
+<table class="table">
+<tr>
+<td>Username</td>
+<td>ADMIN</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>Admin</td>
+</tr>
+<tr>
+    <td>Contact for Queries</td>
+    <td>adminsupport@hackathon.com</td>
+</tr>
+</table>
+
+
+</div>
+</mat-card>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- <button class="btn" (click)="addcsvQuestion()">Add Questions</button>
+<button class="btn" (click)="addsinglequestion()">Add Question Individually</button>
+<button class="btn" (click)="removesinglequestion()">Remove Question Individually</button>
+<button class="btn" (click)="searchstudents()">Search students</button> -->
+
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class = "col">
+            <button class="btn" (click)="addcsvQuestion()">Add Questions</button>
+        </div>
+        <div class = "col">
+            <button class="btn" (click)="addsinglequestion()">Add Question Individually</button>
+        </div>
+        <div class = "col">
+            <button class="btn" (click)="removesinglequestion()">Remove Question Individually</button>
+        </div>
+        <div class = "col">
+            <button class="btn" (click)="searchstudents()">Search students</button>
+        </div>
+    </div>
+</div> -->

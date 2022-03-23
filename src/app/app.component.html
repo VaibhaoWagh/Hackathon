@@ -1,0 +1,34 @@
+ <ngx-ui-loader    fgsColor="#ff4081"
+ pbColor="#ff4081"
+ text="Loading your test...">
+ 
+
+</ngx-ui-loader>
+
+<div ngxUiLoaderBlurred >
+    <!-- This page content will be blurred/frosted when foreground loader is showed -->
+    <mat-toolbar color ="accent">
+        <div >
+            
+                <span>HACKATHON</span>
+                <span class="example-spacer"></span>
+                <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+              
+    
+    
+        <button mat-fab color="accent" aria-label="Example icon button with a home icon" routerLink="homepage" style="margin-left: 1470px" class = "btn bttn">
+          <mat-icon>home</mat-icon>
+        </button>
+      
+        </div>
+    </mat-toolbar>
+     
+    
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    
+    
+  </div>
+
+    

@@ -1,0 +1,84 @@
+<div >
+    
+<!-- <div>
+
+    <button class = "btn" (click) = "registerUser()">Register</button>
+    <button class = "btn" (click) = "loginUser()">Login</button>
+
+
+</div> -->
+
+    <ul >
+
+        <li class="nav-item">
+            <button mat-button color="accent" (click) = "registerUser()" >Register</button>
+        </li>
+
+        <li class="nav-item">
+            <button mat-button color="accent" (click) = "loginUser()" >Login</button>
+            <!-- <button class = "btn" (click) =  ></button> -->
+        </li>
+
+        <li class="nav-item">
+           <!-- <a routerLink="/aboutus" class="nav-link">About us</a> -->
+
+            <button mat-button color="accent"   routerLink="/aboutus" class="nav-link">About Us</button>
+
+            
+        </li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <button mat-button color="accent" [disabled] = "!loggedin" (click) = "logout()">Log out</button>
+        </li>
+    </ul>
+
+
+<div class ="buttons">
+    <div class="col-md-12 text-center">
+        <button  mat-button color="accent"  [disabled] = "!loggedin"(click) = "selectExam()">New Exam</button>    
+        <button mat-button color="accent" [disabled] = "!loggedin" (click) = "viewReport()">Report Card</button>
+
+</div>
+
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <!-- <button class = "btn viewreport" [disabled] = "!loggedin" (click) = "viewReport()">Report Card</button>
+    </div> -->
